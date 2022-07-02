@@ -3,14 +3,14 @@ import 'dart:js';
 
 void main(List<String> args) {
   DivElement dartStatus = querySelector('#dart-status') as DivElement;
-  dartStatus.text = 'Here is how much people like the menu ！';
+  dartStatus.text = '调查对象年龄分布';
 
   var myData = JsObject.jsify([
-    {'menu': '板栗炖鸡', 'number': 6},
-    {'menu': '虾仁滑蛋', 'number': 2},
-    {'menu': '番茄牛腩', 'number': 4},
-    {'menu': '豉汁排骨', 'number': 8},
-    {'menu': '芝士虾球', 'number': 10},
+    {'menu': '12-18', 'number': 10},
+    {'menu': '18-25', 'number': 5},
+    {'menu': '25-40', 'number': 7},
+    {'menu': '40-60', 'number': 5},
+    {'menu': '60+', 'number': 2},
   ]);
 
   var chart = context['chart'];
